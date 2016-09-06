@@ -1,0 +1,44 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+/* =================================
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .main-header,
+  .row,
+  .main-nav {
+    display: flex;
+  }
+  .main-header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col{
+    flex:1 50%; // col take up equal amount left to right
+  }
+
+  .row{
+    flex-wrap: wrap;
+  }
+
+}
+@media (min-width: 1025px) {
+  .main-header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .primary{
+    flex:2; // col take up twice as much space as the col next to it
+  }
+
+  .secondary{
+    order: -1;
+  }
+
+  .col{
+    flex-basis: 0;
+  }
+}
