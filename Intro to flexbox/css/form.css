@@ -1,0 +1,87 @@
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #3AAFAB;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container-form {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer li,
+.flex-inner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  align-self: flex-start;
+  max-width: 220px;
+  padding: 0 8px 8px 0;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.flex-outer li label + *,
+.flex-outer li .flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.flex-outer li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.flex-outer .flex-inner {
+  align-items: baseline;
+}
+.flex-outer li p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.flex-inner {
+  width: 50%;
+}
+.flex-inner li {
+  flex: 1 100px;
+  max-width: 100px;
+  padding: 0 0 8px;
+}
+.flex-inner li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.flex-inner li label {
+  flex: 1 0 75px;
+  padding: 0 8px;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}

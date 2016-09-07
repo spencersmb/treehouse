@@ -1,6 +1,34 @@
-/* ================================= 
+/* =================================
   Flexbox
 ==================================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row {
+  flex: 1;
+}
+
+.s2 .col {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: .5rem;
+  padding: 1rem;
+}
+.s2 .button {
+  align-self: flex-start;
+  background-color: #3acec2;
+  border-radius: 5px;
+  color: white;
+  margin-top: auto;
+  padding: 15px;
+}
+
 /* =================================
   Media Queries
 ==================================== */
@@ -12,33 +40,35 @@
   }
 
   .main-header {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
-  .col {
+  .row.s1 {
+    flex-wrap: wrap;
+  }
+
+  .s1 .col {
     flex: 1 50%;
   }
 
-  .row {
-    flex-wrap: wrap;
+  .s2 .col .button {
+    align-self: center;
   }
 }
 @media (min-width: 1025px) {
   .main-header {
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
   }
 
-  .primary {
+  .s1 .primary {
     flex: 2;
   }
-
-  .secondary {
+  .s1 .secondary {
     order: -1;
   }
-
-  .col {
+  .s1 .col {
     flex-basis: 0;
   }
 }
