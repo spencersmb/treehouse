@@ -1,0 +1,60 @@
+
+.grid-border {
+  border: solid 1px #e7e7e7;
+}
+
+.grid-padding{
+  padding:12px;
+}
+
+.grid-background {
+  background: #ececec;
+}
+
+.grid {
+  border: solid 1px #e7e7e7;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__item {
+  flex: 1; // Just add flex: 1 to make a child of display flex an item
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+}
+
+.component__section {
+  margin: 20px auto 60px;
+
+  .col-xs{
+    padding: 12px;
+  }
+}
+
+@media all and ( min-width: 480px ) {
+
+
+  .grid__row--sm {
+    flex-direction: row;
+  }
+
+}
+
+@media all and ( min-width: 720px ) {
+
+  .grid__row--md {
+    flex-direction: row;
+  }
+
+}
+
+@media all and ( min-width: 960px ) {
+
+  .grid__row--lg {
+    flex-direction: row;
+  }
+
+}

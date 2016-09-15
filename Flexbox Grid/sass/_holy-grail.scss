@@ -1,0 +1,54 @@
+
+.holy-grail{
+  display: flex;
+  flex-direction: column;
+}
+
+.holy-grail__header{
+  background-color: #f07850;
+  text-align: center;
+  color: #fff;
+  padding:30px;
+}
+
+.holy-grail__body{
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(tablet){
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.holy-grail__content{
+  padding: 20px;
+  flex:1;
+  @include breakpoint(tablet){
+    flex:2;
+  }
+}
+.holy-grail__sidebar{
+  padding: 20px;
+  flex: 1;
+  background-color: #e7e7e7;
+  @include breakpoint(tablet){
+    flex: 0 0 180px;
+  }
+  @include breakpoint(laptop){
+    flex: 0 0 240px;
+  }
+}
+.holy-grail__sidebar--first{
+  order: 0;
+  @include breakpoint(tablet){
+    order: -1;
+  }
+
+}
+
+.holy-grail__footer{
+  flex: 1 100%;
+  background-color: #f07850;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}

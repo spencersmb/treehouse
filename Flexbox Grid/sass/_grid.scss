@@ -1,0 +1,114 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include breakpoint(mobile){
+    max-width: 576px;
+  }
+  @include breakpoint(tablet){
+    max-width: 720px;
+  }
+  @include breakpoint(laptop){
+    max-width: 940px;
+  }
+  @include breakpoint(desktop){
+    max-width: 1140px;
+  }
+}
+
+.flex-row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-direction: column;
+}
+
+.flex-row-sm {
+  @include breakpoint(mobile){
+    flex-direction: row;
+  }
+}
+
+.flex-row-md {
+  @include breakpoint(tablet){
+    flex-direction: row;
+  }
+}
+
+.flex-row-lg {
+  @include breakpoint(laptop){
+    flex-direction: row;
+  }
+}
+//xs = mobile and lower - base settings essentially
+//sm = mobile to tablet
+//md = tablet to laptop
+//lg = laptop and larger...
+
+
+
+.flex-xs {
+  position: relative;
+  flex: 1 0;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.flex-sm-3 {
+  @include breakpoint(mobile){
+    flex: 3 !important;
+  }
+}
+
+.flex-sm-2 {
+  @include breakpoint(mobile){
+    flex: 2 !important;
+  }
+}
+
+.flex-sm-1{
+  @include breakpoint(mobile){
+    flex: 1 !important;
+  }
+}
+
+.flex-sm-25{
+  @include breakpoint(mobile){
+    flex: 1 0 25%!important;
+  }
+}
+
+.flex-sm-50{
+  @include breakpoint(mobile){
+    flex: 1 0 50%!important;
+  }
+}
+
+.flex-sm-33{
+  @include breakpoint(mobile){
+    flex: 1 0 33.333333%!important;
+  }
+}
+.flex-bottom{
+  align-items: flex-end;
+}
+.flex-center-v{
+  align-items: center;
+}
+.flex-cell{
+  padding: 12px;
+}
+.flex-center-v-self{
+  align-self: center;
+}
+
+.flex-push-left-sm{
+  @include breakpoint(mobile){
+    order: -1;
+  }
+}
+

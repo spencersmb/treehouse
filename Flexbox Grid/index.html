@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grid</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1 class="name"><a href="#">Best City Guide</a></h1>
+    <ul class="main-nav">
+        <li><a href="#">ice cream</a></li>
+        <li><a href="#">donuts</a></li>
+        <li><a href="#">tea</a></li>
+        <li><a href="#">coffee</a></li>
+    </ul>
+</header><!--/.main-header-->
+
+
+<section class="component__section container">
+    <h2 class="component__sub-title">Spencers Flex Grid</h2>
+
+    <div class="flex-row flex-row-md">
+        <div class="flex-xs grid-border grid-padding">1</div>
+        <div class="flex-xs grid-border grid-padding">2</div>
+    </div>
+
+    <div class="flex-row flex-row-lg">
+        <div class="flex-xs grid-border grid-padding">1</div>
+        <div class="flex-xs grid-border grid-padding">2</div>
+        <div class="flex-xs grid-border grid-padding">3</div>
+    </div>
+
+    <div class="flex-row flex-row-sm">
+        <div class="flex-xs grid-border grid-padding">1</div>
+        <div class="flex-xs grid-border grid-padding">2</div>
+        <div class="flex-xs grid-border grid-padding">3</div>
+        <div class="flex-xs grid-border grid-padding">4</div>
+    </div>
+
+    <div class="flex-row flex-row-sm">
+        <div class="flex-sm-2 grid-border grid-padding">1</div>
+        <div class="flex-sm-1 grid-border grid-padding">2</div>
+    </div>
+
+    <div class="flex-row flex-row-sm">
+        <div class="flex-sm-3 grid-border grid-padding">1</div>
+        <div class="flex-sm-1 grid-border grid-padding">2</div>
+    </div>
+
+    <div class="flex-row flex-row-sm">
+        <div class="flex-sm-25 grid-border grid-padding">1</div>
+        <div class="flex-sm-1 grid-border grid-padding">1</div>
+    </div>
+
+    <div class="flex-row flex-row-sm">
+        <div class="flex-sm-2 grid-border grid-padding">1</div>
+        <div class="flex-sm-33 grid-border grid-padding">1</div>
+        <div class="flex-sm-3 grid-border grid-padding">1</div>
+    </div>
+
+    <div class="flex-row flex-row-sm">
+        <div class="flex-sm-3 grid-border grid-padding">
+            <div class="container">
+                <div class="flex-row flex-row-sm">
+                    <div class="flex-sm-3 grid-border grid-padding">
+                        <div class="container">
+                            <div class="flex-row flex-row-sm">
+                                <div class="flex-xs grid-border grid-padding">Nested</div>
+                                <div class="flex-xs grid-border grid-padding">Nested</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-sm-2 grid-border grid-padding"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-sm-2 grid-border grid-padding">2</div>
+    </div>
+
+    <h3 class="component__sub-title" style="margin-top: 30px">Top Aligned</h3>
+    <div class="flex-row flex-row-sm">
+        <div class="flex-xs grid-padding">
+            <div class="flex-cell grid-background">
+                <p>This cell should be top-aligned.
+                </p>
+            </div>
+        </div>
+        <div class="flex-xs grid-padding">
+            <div class="flex-cell grid-background">
+                <p>Pellentesque sagittis vel erat ac laoreet. Phasellus ac aliquet enim, eu aliquet sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar porta leo, eu ultricies nunc sollicitudin vitae. Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh.
+                </p>
+            </div>
+        </div>
+        <div class="flex-xs grid-padding">
+            <div class="flex-cell grid-background">
+                <p>This cell should be top-aligned.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="component__sub-title" style="margin-top: 30px">Bottom Aligned</h3>
+    <div class="flex-row flex-row-sm flex-bottom">
+        <div class="flex-xs grid-padding flex-center-v-self">
+            <div class="flex-cell grid-background">
+                <p>This cell should be top-aligned.
+                </p>
+            </div>
+        </div>
+        <div class="flex-xs grid-padding">
+            <div class="flex-cell grid-background">
+                <p>Pellentesque sagittis vel erat ac laoreet. Phasellus ac aliquet enim, eu aliquet sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar porta leo, eu ultricies nunc sollicitudin vitae. Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh.
+                </p>
+            </div>
+        </div>
+        <div class="flex-xs grid-padding">
+            <div class="flex-cell grid-background">
+                <p>This cell should be top-aligned.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="component__sub-title" style="margin-top: 30px">Reverse order sidebar</h3>
+    <div class="flex-row flex-row-sm">
+        <div class="flex-xs grid-padding grid-border">
+            1
+        </div>
+        <div class="flex-sm-2 grid-padding grid-border flex-push-left-sm">
+            2
+        </div>
+
+    </div>
+
+</section>
+<section class="component__section container">
+    <h2 class="component__sub-title">Flexbox Grid With No modifiers</h2>
+
+    <div class="grid">
+        <div class="grid__row grid__row--sm">
+            <div class="grid__item">1</div>
+            <div class="grid__item">2</div>
+        </div>
+        <div class="grid__row grid__row--md">
+            <div class="grid__item">1</div>
+            <div class="grid__item">2</div>
+            <div class="grid__item">3</div>
+        </div>
+        <div class="grid__row grid__row--lg">
+            <div class="grid__item">1</div>
+            <div class="grid__item">2</div>
+            <div class="grid__item">3</div>
+            <div class="grid__item">4</div>
+        </div>
+    </div>
+</section>
+<section class="component__section container box-container">
+    <div class="flex-row flex-row-sm box-row">
+        <div class="flex-xs box-item grid-border grid-padding">1</div>
+        <div class="flex-xs box-item grid-border grid-padding">2</div>
+    </div>
+    <div class="flex-row flex-row-sm box-row">
+        <div class="flex-xs box-item grid-border grid-padding">1</div>
+        <div class="flex-xs box-item grid-border grid-padding">2</div>
+    </div>
+    <div class="box-center grid-border">Center</div>
+</section>
+<section class="component__section container-fullwidth">
+    <h2 class="component__sub-title">Flexbox Grid With Nested Grid</h2>
+
+    <div class="grid">
+        <div class="grid__row grid__row--sm">
+            <div class="grid__item">
+                <div class="grid">
+                    <div class="grid__row grid__row--lg">
+                        <div class="grid__item">Nested 1</div>
+                        <div class="grid__item">Nested 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">2</div>
+        </div>
+        <div class="grid__row grid__row--md">
+            <div class="grid__item">1</div>
+            <div class="grid__item">2</div>
+            <div class="grid__item">3</div>
+        </div>
+        <div class="grid__row grid__row--lg">
+            <div class="grid__item">1</div>
+            <div class="grid__item">2</div>
+            <div class="grid__item">3</div>
+            <div class="grid__item">4</div>
+        </div>
+    </div>
+</section>
+
+
+<!--<section class="component__section container">-->
+    <!--<h2 class="component__sub-title">Flexbox Bootstrap</h2>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-xs grid-border">1</div>-->
+        <!--<div class="col-xs grid-border">2</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-xs grid-border">1</div>-->
+        <!--<div class="col-xs grid-border">2</div>-->
+        <!--<div class="col-xs grid-border">3</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-xs grid-border">1</div>-->
+        <!--<div class="col-xs grid-border">2</div>-->
+        <!--<div class="col-xs grid-border">3</div>-->
+        <!--<div class="col-xs grid-border">4</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-xs grid-border">1</div>-->
+        <!--<div class="col-xs col-xs-6 grid-border">2</div>-->
+        <!--<div class="col-xs grid-border">3</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-xs-12 col-md-8 grid-border">1</div>-->
+        <!--<div class="col-xs-12 col-xs-flex grid-border">2</div>-->
+    <!--</div>-->
+
+
+
+<!--</section>-->
+
+<footer class="main-footer">
+    <span>&copy;2015 Residents of The Best City Ever.</span>
+</footer>
+
+</body>
+</html>

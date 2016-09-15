@@ -1,0 +1,312 @@
+/*------------------------------------*\
+    BREAKPOINTS
+\*------------------------------------*/
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+  color: #093a58;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 544px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.flex-row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-direction: column;
+}
+
+@media (min-width: 544px) {
+  .flex-row-sm {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-row-md {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .flex-row-lg {
+    flex-direction: row;
+  }
+}
+
+.flex-xs {
+  position: relative;
+  flex: 1 0;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 544px) {
+  .flex-sm-3 {
+    flex: 3 !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .flex-sm-2 {
+    flex: 2 !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .flex-sm-1 {
+    flex: 1 !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .flex-sm-25 {
+    flex: 1 0 25% !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .flex-sm-50 {
+    flex: 1 0 50% !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .flex-sm-33 {
+    flex: 1 0 33.33333% !important;
+  }
+}
+
+.flex-bottom {
+  align-items: flex-end;
+}
+
+.flex-center-v {
+  align-items: center;
+}
+
+.flex-cell {
+  padding: 12px;
+}
+
+.flex-center-v-self {
+  align-self: center;
+}
+
+@media (min-width: 544px) {
+  .flex-push-left-sm {
+    order: -1;
+  }
+}
+
+.grid-border {
+  border: solid 1px #e7e7e7;
+}
+
+.grid-padding {
+  padding: 12px;
+}
+
+.grid-background {
+  background: #ececec;
+}
+
+.grid {
+  border: solid 1px #e7e7e7;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__item {
+  flex: 1;
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+}
+
+.component__section {
+  margin: 20px auto 60px;
+}
+.component__section .col-xs {
+  padding: 12px;
+}
+
+@media all and (min-width: 480px) {
+  .grid__row--sm {
+    flex-direction: row;
+  }
+}
+@media all and (min-width: 720px) {
+  .grid__row--md {
+    flex-direction: row;
+  }
+}
+@media all and (min-width: 960px) {
+  .grid__row--lg {
+    flex-direction: row;
+  }
+}
+.holy-grail {
+  display: flex;
+  flex-direction: column;
+}
+
+.holy-grail__header {
+  background-color: #f07850;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.holy-grail__body {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .holy-grail__body {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.holy-grail__content {
+  padding: 20px;
+  flex: 1;
+}
+@media only screen and (min-width: 768px) {
+  .holy-grail__content {
+    flex: 2;
+  }
+}
+
+.holy-grail__sidebar {
+  padding: 20px;
+  flex: 1;
+  background-color: #e7e7e7;
+}
+@media only screen and (min-width: 768px) {
+  .holy-grail__sidebar {
+    flex: 0 0 180px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .holy-grail__sidebar {
+    flex: 0 0 240px;
+  }
+}
+
+.holy-grail__sidebar--first {
+  order: 0;
+}
+@media only screen and (min-width: 768px) {
+  .holy-grail__sidebar--first {
+    order: -1;
+  }
+}
+
+.holy-grail__footer {
+  flex: 1 100%;
+  background-color: #f07850;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.box-row {
+  margin: 0;
+  align-self: stretch;
+}
+
+.box-item {
+  padding: 60px 60px;
+  text-align: center;
+  flex: 1 0 50%;
+}
+
+.box-center {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 60px 60px;
+  text-align: center;
+  flex: 1 0 50%;
+  align-self: center;
+}
