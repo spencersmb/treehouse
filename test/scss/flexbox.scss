@@ -1,0 +1,99 @@
+/* =================================
+  Flexbox
+==================================== */
+$white: #fff;
+$teal: #3db5da;
+$green: #3acec2;
+$light-grey: rgba(0, 0, 0, .1);
+$grey: #d9e4ea;
+$background: #e8e9e9;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row {
+  flex: 1;
+}
+
+.s2 {
+  .col {
+    background-color: $light-grey;
+    border-radius: 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+  }
+
+  .button {
+    align-self: flex-start;
+    background-color: $green;
+    border-radius: 5px;
+    color: $white;
+    margin-top: auto;
+    padding: 15px;
+  }
+
+}
+
+/* =================================
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .main-header,
+  .row,
+  .main-nav {
+    display: flex;
+  }
+
+  .main-header {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row {
+    &.s1 {
+      flex-wrap: wrap;
+    }
+  }
+
+  .s1 {
+    .col {
+      flex: 1 50%; // col take up equal amount left to right
+    }
+  }
+
+  .s2 {
+    .col {
+      .button {
+        align-self: center;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .s1 {
+    .primary {
+      flex: 2; // col take up twice as much space as the col next to it
+    }
+
+    .secondary {
+      order: -1;
+    }
+
+    .col {
+      flex-basis: 0;
+    }
+  }
+}

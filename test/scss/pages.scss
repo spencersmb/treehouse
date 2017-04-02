@@ -1,0 +1,29 @@
+/* =================================
+  Page Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+$white: #fff;
+$teal: #3db5da;
+$light-grey: rgba(0, 0, 0, .1);
+$grey: #d9e4ea;
+$background: #e8e9e9;
+
+.banner {
+  margin: 0;
+}
+
+.section-spacer {
+  background: $grey;
+  margin: 40px auto;
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
